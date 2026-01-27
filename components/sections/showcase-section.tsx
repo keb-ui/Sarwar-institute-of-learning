@@ -2,7 +2,7 @@
 
 import { useRef } from "react"
 import { motion, useScroll } from "framer-motion"
-import { BookOpen, TrendingUp, Beaker, Globe2, Palette, Calculator } from "lucide-react"
+import { BookOpen, TrendingUp, Beaker, Globe2, Palette, Calculator, Book } from "lucide-react"
 
 const subjects = [
   {
@@ -18,28 +18,34 @@ const subjects = [
     color: "bg-accent/10 text-accent",
   },
   {
+    icon: Book,
+    title: "English",
+    description: "Build strong reading, writing, and communication skills with founder Hedayat Sarwar.",
+    color: "bg-primary/10 text-primary",
+  },
+  {
     icon: Globe2,
     title: "History",
     description: "Journey through time and understand the events that shaped our world with founder Hedayat Sarwar.",
-    color: "bg-primary/10 text-primary",
+    color: "bg-accent/10 text-accent",
   },
   {
     icon: Palette,
     title: "Arts",
     description: "Unleash creativity through visual arts, music, and expressive learning with Hedayat Sarwar.",
-    color: "bg-accent/10 text-accent",
+    color: "bg-primary/10 text-primary",
   },
   {
     icon: TrendingUp,
     title: "Financial Literacy",
     description: "Master stocks, investing, and money management with founder Hedayat Sarwar.",
-    color: "bg-primary/10 text-primary",
+    color: "bg-accent/10 text-accent",
   },
   {
     icon: BookOpen,
     title: "Personalized Learning",
     description: "Tailored tutoring that adapts to your unique learning style and pace.",
-    color: "bg-accent/10 text-accent",
+    color: "bg-primary/10 text-primary",
   },
 ]
 
