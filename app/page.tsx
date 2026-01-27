@@ -4,6 +4,7 @@ import { HeroSection } from "@/components/sections/hero-section"
 import { ManifestoSection } from "@/components/sections/manifesto-section"
 import { FeaturesSection } from "@/components/sections/features-section"
 import { ShowcaseSection } from "@/components/sections/showcase-section"
+import { CommunitySection } from "@/components/sections/community-section"
 import { CarouselSection } from "@/components/sections/carousel-section"
 import { InsightsSection } from "@/components/sections/insights-section"
 import { PricingSection } from "@/components/sections/pricing-section"
@@ -18,6 +19,7 @@ export default function Home() {
         <ManifestoSection />
         <FeaturesSection />
         <ShowcaseSection />
+        <CommunitySection />
         <CarouselSection />
         <InsightsSection />
         <PricingSection />
