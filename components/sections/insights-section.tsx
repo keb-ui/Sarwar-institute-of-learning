@@ -18,7 +18,7 @@ const articles = [
     image: "/personal-branding-digital-marketing.jpg",
   },
   {
-    title: "Typography Trends for 2024",
+    title: "Typography Trends",
     category: "Typography",
     image: "/typography-trends-modern-fonts.jpg",
   },
