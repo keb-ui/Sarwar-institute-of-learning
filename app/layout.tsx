@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   description:
     "Comprehensive tutoring services across math, science, history, and the arts, plus practical lessons in stocks and finance to enhance your financial literacy. Empowering our community through education.",
   generator: "v0.app",
+  verification: {
+    google: "ceYuPw4JbNqPh-pxdi6EBdyBrSUrr-C7NvJlWtd-CuQ",
+  },
   icons: {
     icon: [
       {
