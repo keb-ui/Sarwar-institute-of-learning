@@ -57,18 +57,7 @@ export function FooterSection() {
 
             <nav className="flex flex-wrap gap-6">
               {footerLinks.map((link, i) => (
-                <motion.a
-                  key={i}
-                  href={link.href}
-                  className="text-muted-foreground hover:text-foreground transition-colors text-sm"
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.15 + i * 0.05 }}
-                  data-clickable
-                >
-                  {link.label}
-                </motion.a>
+                null
               ))}
             </nav>
           </div>
