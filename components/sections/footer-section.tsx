@@ -5,17 +5,17 @@ import { motion } from "framer-motion"
 import { ArrowRight, Mail, Phone, MapPin } from "lucide-react"
 
 const footerLinks = [
-  { label: "Subjects", href: "#" },
-  { label: "Pricing", href: "#" },
-  { label: "About Us", href: "#" },
-  { label: "Contact", href: "#" },
+  { label: "Subjects", href: "#subjects" },
+  { label: "Pricing", href: "#pricing" },
+  { label: "Community", href: "#community" },
+  { label: "Contact", href: "#contact" },
 ]
 
 export function FooterSection() {
   const [email, setEmail] = useState("")
 
   return (
-    <footer className="relative bg-background px-6 py-24 overflow-hidden">
+    <footer id="contact" className="relative bg-background px-6 py-24 overflow-hidden scroll-mt-16">
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] pointer-events-none">
         <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 via-accent/20 to-primary/20 opacity-50 blur-3xl rounded-full" />
       </div>
