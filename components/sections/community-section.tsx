@@ -31,19 +31,28 @@ export function CommunitySection() {
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
         >
-          Learn Together, Grow Together
+          Ask a Former Student
         </motion.h2>
 
-        <motion.p
-          className="text-lg text-muted-foreground max-w-2xl mb-12"
+        <motion.div
+          className="mb-12"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
         >
-          Join our thriving Discord community where students connect, collaborate, and learn from each other. 
-          Live classes, study sessions, and expert guidance await.
-        </motion.p>
+          <div className="flex flex-col sm:flex-row sm:flex-wrap gap-4 sm:gap-8">
+            <a href="mailto:omartarvin@gmail.com" className="text-lg text-muted-foreground hover:text-foreground transition-colors">
+              <span className="font-medium text-foreground">Omar</span> — omartarvin@gmail.com
+            </a>
+            <a href="mailto:aaliyahcervantes772@gmail.com" className="text-lg text-muted-foreground hover:text-foreground transition-colors">
+              <span className="font-medium text-foreground">Aaliyah</span> — aaliyahcervantes772@gmail.com
+            </a>
+            <a href="mailto:jordanmersin@gmail.com" className="text-lg text-muted-foreground hover:text-foreground transition-colors">
+              <span className="font-medium text-foreground">Jordan</span> — jordanmersin@gmail.com
+            </a>
+          </div>
+        </motion.div>
 
         {/* Stats Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
@@ -64,52 +73,38 @@ export function CommunitySection() {
           ))}
         </div>
 
-        {/* Screenshots Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        {/* Testimonial Screenshots */}
+        <div className="flex flex-col gap-6">
           <motion.div
-            className="relative rounded-2xl overflow-hidden border border-border shadow-lg bg-card"
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            className="rounded-2xl overflow-hidden border border-border shadow-lg bg-[#313338]"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}
           >
-            <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent z-10" />
             <Image
-              src="/images/discord-live-classes.png"
-              alt="Sarwar's Institute of Learning Discord server showing active tutoring channels and class announcements"
-              width={800}
-              height={600}
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-01-31%20142706-41uqjZudPeSB98CZ9GZZXip7GlMchN.png"
+              alt="Discord testimonial from coco thanking Sarwar for tutoring - went from 40 to 95 in English class"
+              width={1200}
+              height={100}
               className="w-full h-auto"
             />
-            <div className="absolute bottom-0 left-0 right-0 p-6 z-20">
-              <h3 className="font-serif text-xl text-foreground mb-2">Live Classes & Channels</h3>
-              <p className="text-sm text-muted-foreground">
-                Dedicated channels for math, science, art, history, finance, and more. Join live voice classes with our expert tutors.
-              </p>
-            </div>
           </motion.div>
 
           <motion.div
-            className="relative rounded-2xl overflow-hidden border border-border shadow-lg bg-card"
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            className="rounded-2xl overflow-hidden border border-border shadow-lg bg-[#313338]"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.4 }}
           >
-            <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent z-10" />
             <Image
-              src="/images/screenshot-202026-01-26-20224723.png"
-              alt="Server insights showing community growth and engagement statistics"
-              width={800}
-              height={600}
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-01-31%20142714-i7YpV4gbTjizBCi9bJOEmr0gOC18pY.png"
+              alt="Discord testimonial from Wist - raised GPA, rebuilt confidence, and transferred to a better college"
+              width={1200}
+              height={100}
               className="w-full h-auto"
             />
-            <div className="absolute bottom-0 left-0 right-0 p-6 z-20">
-              <h3 className="font-serif text-xl text-foreground mb-2">Growing Community</h3>
-              <p className="text-sm text-muted-foreground">
-                Watch our community thrive with hundreds of new members joining each week to learn and grow together.
-              </p>
-            </div>
           </motion.div>
         </div>
       </div>
