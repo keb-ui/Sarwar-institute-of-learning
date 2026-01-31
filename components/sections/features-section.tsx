@@ -80,8 +80,8 @@ function CommunityCounter() {
 
   useEffect(() => {
     const timeout = setTimeout(() => {
-      if (count < 500) {
-        setCount((prev) => prev + 25)
+      if (count < 300) {
+        setCount((prev) => prev + 15)
       }
     }, 50)
     return () => clearTimeout(timeout)
