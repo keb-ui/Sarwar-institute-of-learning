@@ -2,14 +2,6 @@
 
 import { motion } from "framer-motion"
 import Image from "next/image"
-import { Users, MessageCircle, TrendingUp, Sparkles } from "lucide-react"
-
-const stats = [
-  { icon: Users, value: "827", label: "Weekly Visitors", trend: "Growing community" },
-  { icon: MessageCircle, value: "128", label: "Active Learners", trend: "Engaged students" },
-  { icon: TrendingUp, value: "375", label: "New Members", trend: "This week" },
-  { icon: Sparkles, value: "60.3%", label: "Retention Rate", trend: "Students return" },
-]
 
 export function CommunitySection() {
   return (
@@ -54,24 +46,22 @@ export function CommunitySection() {
           </div>
         </motion.div>
 
-        {/* Stats Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-          {stats.map((stat, index) => (
-            <motion.div
-              key={stat.label}
-              className="bg-card border border-border rounded-xl p-6 text-center shadow-sm"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.1 * index }}
-            >
-              <stat.icon className="w-8 h-8 text-primary mx-auto mb-3" strokeWidth={1.5} />
-              <div className="text-3xl font-bold text-foreground mb-1">{stat.value}</div>
-              <div className="text-sm font-medium text-foreground mb-1">{stat.label}</div>
-              <div className="text-xs text-muted-foreground">{stat.trend}</div>
-            </motion.div>
-          ))}
-        </div>
+        {/* Server Info Card */}
+        <motion.div
+          className="mb-12 max-w-sm"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.3 }}
+        >
+          <Image
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-01-31%20143114-w0uvj6XMpEgAbWFYeavX84E6wMOEI5.png"
+            alt="Sarwar Institute of Learning Discord server - 12 Online, 317 Members, Est. May 2023"
+            width={400}
+            height={300}
+            className="w-full h-auto rounded-2xl border border-border shadow-lg"
+          />
+        </motion.div>
 
         {/* Testimonial Screenshots */}
         <div className="flex flex-col gap-6">
