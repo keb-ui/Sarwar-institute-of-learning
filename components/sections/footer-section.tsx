@@ -73,16 +73,7 @@ export function FooterSection() {
             </nav>
           </div>
 
-          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-            <h3 className="font-serif text-2xl text-foreground mb-4">Stay Connected</h3>
-            <p className="text-muted-foreground text-sm leading-relaxed mb-6 opacity-100">
-              If you would like to enroll yourself or your child at Sarwar’s Institute of Learning, please text 984-218-7561.
-            </p>
-            <form onSubmit={(e) => e.preventDefault()} className="flex gap-2">
-              
-              
-            </form>
-          </motion.div>
+
         </div>
 
         <div className="mt-16 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
