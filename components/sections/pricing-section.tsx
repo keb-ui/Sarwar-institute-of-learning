@@ -23,13 +23,7 @@ export function PricingSection() {
               We're incredibly thankful to everyone who supported us, learned with us, and believed in what we were building. The impact of this experience will last far beyond the website.
             </p>
             <p>
-              Thank you for being part of our story. If you have any questions, please feel free to{" "}
-              <a 
-                href="mailto:contact@sarwarinstitute.com" 
-                className="text-foreground underline underline-offset-4 hover:text-primary transition-colors"
-              >
-                email us
-              </a>.
+              Thank you for being part of our story.
             </p>
             <p className="text-foreground font-medium">
               We wish you continued success in your learning journey.
