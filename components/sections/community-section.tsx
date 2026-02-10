@@ -5,7 +5,7 @@ import Image from "next/image"
 
 export function CommunitySection() {
   return (
-    <section className="bg-muted/30 px-6 py-24">
+    <section id="community" className="bg-muted/30 px-6 py-24 scroll-mt-16">
       <div className="max-w-6xl mx-auto">
         <motion.p
           className="text-muted-foreground text-sm uppercase tracking-widest mb-4"
