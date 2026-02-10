@@ -1,19 +1,16 @@
 "use client"
 
-import { useState } from "react"
 import { motion } from "framer-motion"
-import { ArrowRight, Mail, Phone, MapPin } from "lucide-react"
+import { Mail, Phone, MapPin } from "lucide-react"
 
 const footerLinks = [
-  { label: "Subjects", href: "#" },
-  { label: "Pricing", href: "#" },
-  { label: "About Us", href: "#" },
-  { label: "Contact", href: "#" },
+  { label: "Subjects", href: "#subjects" },
+  { label: "Community", href: "#community" },
+  { label: "About Us", href: "#about" },
+  { label: "Features", href: "#features" },
 ]
 
 export function FooterSection() {
-  const [email, setEmail] = useState("")
-
   return (
     <footer className="relative bg-background px-6 py-24 overflow-hidden">
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] pointer-events-none">
@@ -41,14 +38,14 @@ export function FooterSection() {
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
             >
-              <div className="flex items-center gap-3 text-muted-foreground">
+              <a href="mailto:hedayatsarwar216@gmail.com" className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors">
                 <Mail size={18} />
                 <span className="text-sm">hedayatsarwar216@gmail.com</span>
-              </div>
-              <div className="flex items-center gap-3 text-muted-foreground">
+              </a>
+              <a href="tel:+19842187561" className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors">
                 <Phone size={18} />
-                <span className="text-sm">(984-218-7561</span>
-              </div>
+                <span className="text-sm">(984) 218-7561</span>
+              </a>
               <div className="flex items-center gap-3 text-muted-foreground">
                 <MapPin size={18} />
                 <span className="text-sm">Garner, NC</span>
@@ -80,14 +77,9 @@ export function FooterSection() {
           <p className="text-muted-foreground text-sm">
             © 2025 Sarwar's Institute of Learning. Empowering learners, building futures.
           </p>
-          <div className="flex gap-6">
-            <a href="#" className="text-muted-foreground hover:text-foreground text-sm" data-clickable>
-              Privacy Policy
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-foreground text-sm" data-clickable>
-              Terms of Service
-            </a>
-          </div>
+          <a href="mailto:hedayatsarwar216@gmail.com" className="text-muted-foreground hover:text-foreground text-sm transition-colors" data-clickable>
+            Contact Us
+          </a>
         </div>
       </div>
     </footer>

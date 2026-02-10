@@ -57,7 +57,7 @@ export function ShowcaseSection() {
   })
 
   return (
-    <section ref={containerRef} className="bg-background px-6 py-32">
+    <section id="subjects" ref={containerRef} className="bg-background px-6 py-32 scroll-mt-16">
       <div className="max-w-6xl mx-auto">
         <motion.p
           className="text-muted-foreground text-sm uppercase tracking-widest mb-4"

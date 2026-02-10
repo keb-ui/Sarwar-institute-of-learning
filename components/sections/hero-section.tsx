@@ -75,20 +75,22 @@ export function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
         >
-          <motion.button
-            className="px-8 py-4 bg-primary text-primary-foreground rounded-xl font-medium text-lg hover:bg-primary/90 transition-colors shadow-lg"
+          <motion.a
+            href="#features"
+            className="px-8 py-4 bg-primary text-primary-foreground rounded-xl font-medium text-lg hover:bg-primary/90 transition-colors shadow-lg inline-block"
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}
           >
             Start Learning Today
-          </motion.button>
-          <motion.button
-            className="px-8 py-4 bg-secondary text-secondary-foreground rounded-xl font-medium text-lg hover:bg-muted transition-colors border-2 border-border"
+          </motion.a>
+          <motion.a
+            href="#subjects"
+            className="px-8 py-4 bg-secondary text-secondary-foreground rounded-xl font-medium text-lg hover:bg-muted transition-colors border-2 border-border inline-block"
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}
           >
             Explore Subjects
-          </motion.button>
+          </motion.a>
         </motion.div>
       </motion.div>
 

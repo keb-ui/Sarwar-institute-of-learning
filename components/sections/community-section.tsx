@@ -5,7 +5,7 @@ import Image from "next/image"
 
 export function CommunitySection() {
   return (
-    <section className="bg-muted/30 px-6 py-24">
+    <section id="community" className="bg-muted/30 px-6 py-24 scroll-mt-16">
       <div className="max-w-6xl mx-auto">
         <motion.p
           className="text-muted-foreground text-sm uppercase tracking-widest mb-4"
@@ -34,14 +34,11 @@ export function CommunitySection() {
           transition={{ delay: 0.2 }}
         >
           <div className="flex flex-col sm:flex-row sm:flex-wrap gap-4 sm:gap-8">
-            <a href="mailto:omartarvin@gmail.com" className="text-lg text-muted-foreground hover:text-foreground transition-colors">
-              <span className="font-medium text-foreground">Omar</span> — omartarvin@gmail.com
+            <a href="mailto:carlosb5271@gmail.com" className="text-lg text-muted-foreground hover:text-foreground transition-colors">
+              <span className="font-medium text-foreground">Carlos B.</span> — carlosb5271@gmail.com
             </a>
-            <a href="mailto:aaliyahcervantes772@gmail.com" className="text-lg text-muted-foreground hover:text-foreground transition-colors">
-              <span className="font-medium text-foreground">Aaliyah</span> — aaliyahcervantes772@gmail.com
-            </a>
-            <a href="mailto:jordanmersin@gmail.com" className="text-lg text-muted-foreground hover:text-foreground transition-colors">
-              <span className="font-medium text-foreground">Jordan</span> — jordanmersin@gmail.com
+            <a href="mailto:clayeh23@gmail.com" className="text-lg text-muted-foreground hover:text-foreground transition-colors">
+              <span className="font-medium text-foreground">Eh G Clay</span> — clayeh23@gmail.com
             </a>
           </div>
         </motion.div>
