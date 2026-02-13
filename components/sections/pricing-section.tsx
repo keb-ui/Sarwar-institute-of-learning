@@ -13,20 +13,17 @@ export function PricingSection() {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl md:text-5xl font-serif text-foreground text-balance mb-8">
-            Thank you for everything
+            A Message from Us
           </h2>
           <div className="space-y-6 text-muted-foreground leading-relaxed">
             <p>
-              Sarwar Institute of Learning started with a simple goal: to help people learn and grow together. Over time, this community became something special. After much thought, we've decided to bring this chapter to a close.
+              Sarwar Institute of Learning started with a simple goal: to help people learn and grow together. Over time, this community became something truly special. After much thought, we've decided to close this chapter and officially end the Sarwar Institute of Learning, including shutting down the community server, due to the ongoing costs and the difficulty of sustaining it long-term.
             </p>
             <p>
-              We're incredibly thankful to everyone who supported us, learned with us, and believed in what we were building. The impact of this experience will last far beyond the website.
+              We're incredibly thankful to everyone who supported us, learned with us, and believed in what we were building. The impact of this experience will last far beyond the server.
             </p>
             <p>
-              Thank you for being part of our story.
-            </p>
-            <p className="text-foreground font-medium">
-              We wish you continued success in your learning journey.
+              Thank you for being part of our story. We wish you continued success in your learning journey.
             </p>
           </div>
         </motion.div>
